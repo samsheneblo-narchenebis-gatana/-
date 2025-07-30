@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+header {
+  background-color: #87CEEB;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  color: #0000FF;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+nav li {
+  color: #4169E1;
+  font-weight: bold;
+}
+
+.banner {
+  background-color: #1E90FF;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.content {
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  gap: 40px;
+  background-color: #f9f9f9;
+}
+
+.content .left img {
+  max-width: 400px;
+  height: auto;
+  border: 2px solid #ccc;
+}
+
+.content .right {
+  max-width: 400px;
+}
+
+.btn-green {
+  background-color: #1E90FF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.content h2 {
+  color:  #1E90FF;
+  margin-top: 0;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content ul li::before {
+  content: "✔ ";
+  color:  #1E90FF;
+}
+
+.carousel {
+  width: 400px;
+  overflow: hidden;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.carousel-track {
+  display: flex;
+  width: 1600px; /* 4 images * 300px each */
+  animation: slide 16s infinite;
+}
+
+.carousel img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(-400px); }
+  50%  { transform: translateX(-800px); }
+  75%  { transform: translateX(-1200px); }
+  100% { transform: translateX(0); }
+}
+
+#phoneNumber {
+  margin-top: 20px ;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+.description {
+  padding: 20px;
+  background-color: #f0f8ff;
+  border-left: 4px solid #007BFF;
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+
+
+.site-footer {
+  background-color: #1E90FF;  /* Dodger Blue or your preferred blue */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.site-footer a {
+  color: #f0f8ff;  /* Light blue link */
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Makes it round */
+  object-fit: cover;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1E90FF; /* Dodger Blue or your brand color */
+  font-family: sans-serif;
+}
